@@ -7,10 +7,7 @@ CORS(app)
 
 # DİKKAT: Render'da bu değeri ÇEVRESEL DEĞİŞKEN (Environment Variable) olarak ayarlayacağız.
 # Kod içindeki bu değer, sadece yerel test için yedektir.
-DATABASE_URL = os.getenv(
-    "DATABASE_URL",
-    "postgresql://volkan:201eAcwsVd7cf1jyxQL2F1wn4VZ3FSbW@dpg-d3t90iur433s73b5q070-a.oregon-postgres.render.com/cloud_db_gwjr"
-)
+DATABASE_URL = os.getenv("DATABASE_URL","https://github.com/EshanKAYA/calisma2/tree/main")
 
 def connect_db():
     return psycopg2.connect(DATABASE_URL)
